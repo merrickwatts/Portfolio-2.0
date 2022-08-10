@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Portfolio from "./components/portfolio";
+import Contact from "./components/Contact";
 
 function App() {
   const [categories] = useState([
@@ -29,6 +30,7 @@ function App() {
       <main>
         {currentCategory.name === "about me" && <About />}
         {currentCategory.name === "portfolio" && <Portfolio />}
+        {currentCategory.name === "contact" && <Contact />}
       </main>
     </body>
   );
