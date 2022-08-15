@@ -345,6 +345,10 @@ textarea {
   border-radius: 10px;
 }
 
+.resume-holder {
+  border-radius: 0 15px;
+}
+
 @media only screen and (max-width: 992px) {
   .project-card {
     max-width: 85%;

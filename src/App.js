@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   const [categories] = useState([
@@ -31,6 +32,7 @@ function App() {
         {currentCategory.name === "about me" && <About />}
         {currentCategory.name === "portfolio" && <Portfolio />}
         {currentCategory.name === "contact" && <Contact />}
+        {currentCategory.name === "resume" && <Resume />}
       </main>
     </body>
   );
