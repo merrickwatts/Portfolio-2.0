@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/Portfolio-2.0/static/css/main.4c6459a7.css",
-    "main.js": "/Portfolio-2.0/static/js/main.064d3794.js",
+    "main.js": "/Portfolio-2.0/static/js/main.2ed1a362.js",
     "static/js/787.a2cb61a6.chunk.js": "/Portfolio-2.0/static/js/787.a2cb61a6.chunk.js",
     "static/media/IMG_0292.png": "/Portfolio-2.0/static/media/IMG_0292.492d1777745951bf1e56.png",
     "static/media/bit-trail.png": "/Portfolio-2.0/static/media/bit-trail.c73cb4c093a07e64ed61.png",
     "static/media/employee-tracker.png": "/Portfolio-2.0/static/media/employee-tracker.e62802c844810b03b092.png",
     "static/media/social-network-api.png": "/Portfolio-2.0/static/media/social-network-api.8356dc0e0dbf45b0b991.png",
+    "static/media/nikes-on-my-feet.png": "/Portfolio-2.0/static/media/nikes-on-my-feet.17c59fffa669a7480d72.png",
     "static/media/ecommerce.png": "/Portfolio-2.0/static/media/ecommerce.5c212569a1fc9b9edee2.png",
     "static/media/note-taker.png": "/Portfolio-2.0/static/media/note-taker.c05e0f68b503f7ea443d.png",
     "static/media/money-tracker.png": "/Portfolio-2.0/static/media/money-tracker.4259215a1e73665e6d66.png",
     "static/media/noun-stamp-4312535.png": "/Portfolio-2.0/static/media/noun-stamp-4312535.ec51f531a42142cc740e.png",
     "index.html": "/Portfolio-2.0/index.html",
     "main.4c6459a7.css.map": "/Portfolio-2.0/static/css/main.4c6459a7.css.map",
-    "main.064d3794.js.map": "/Portfolio-2.0/static/js/main.064d3794.js.map",
+    "main.2ed1a362.js.map": "/Portfolio-2.0/static/js/main.2ed1a362.js.map",
     "787.a2cb61a6.chunk.js.map": "/Portfolio-2.0/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c6459a7.css",
-    "static/js/main.064d3794.js"
+    "static/js/main.2ed1a362.js"
   ]
 }
