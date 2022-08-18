@@ -24,11 +24,11 @@ function Portfolio() {
       gitHubLink: "https://github.com/merrickwatts/Note-Taking-App",
     },
     {
-      name: "E-commerce-Backend",
+      name: "Nikes on My Feet",
       description:
-        "MySQL database and API to track stock counts and information about products.",
-      imageSrc: "ecommerce",
-      gitHubLink: "https://github.com/merrickwatts/Ecommerce-Backend",
+        "A desplay site where you can view custom nike shoes and buy them if you like them.",
+      imageSrc: "nikes-on-my-feet",
+      gitHubLink: "https://github.com/merrickwatts/nikes-on-my-feet",
     },
     {
       name: "Bit-Trail",
