@@ -299,6 +299,17 @@ textarea {
 
 .resume-holder {
   border-radius: 0 15px;
+  width: 100%;
+  height: 250%;
+}
+
+.resume {
+  position:relative;
+  top: 10px; 
+  left: 10vw;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .center-content {
