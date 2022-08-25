@@ -15,6 +15,7 @@ main {
   --spacing-two: calc(1rem * 1.5);
   --spacing-five: calc(2.5rem);
   --image-size: calc(15vw);
+  justify-content: center
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans:wght@400;700&family=Staatliches&display=swap');
@@ -22,8 +23,6 @@ main {
 * {
   box-sizing: border-box;
   font-family: 'Staatliches';
-  margin: 0px;
-  padding: 0px;
 }
 
 html,
@@ -102,22 +101,49 @@ body {
   padding: 0;
   font-weight: 600;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 2vw;
   letter-spacing: 0.1em;
   background-color: var(--dark);
-  color: var(--light);
+  color: var(--dark);
+}
+
+.title {
+  padding: 0 3vw;
+  font-size: 4vw;
+  text-align: left;
+}
+
+.portfolio-title {
+  font-size: 3vw;
+  color: var(--primary);
+  text-shadow: 2px 2px var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+  margin-bottom: 10vh;
+}
+
+.porject-title {
+  margin: 2vh 0;
+  font-size: 2vw;
+  font-weight: 600;
+  border-bottom: 3px solid var(--dark);
+  margin-bottom: 4vh;
+}
+
+.project-links {
+  border-bottom: 3px solid var(--dark);
+  border-top: 3px solid var(--dark);
+  margin: 4vh 0;
+  padding: 2vh 2vw;
 }
 
 .main-holder {
-  height: 200vh;
-  width: 100vw;
-  padding: 1vh 0;
-  margin: 0;
+  padding: 3vh 0;
 }
 
 .into-holder {
   height: 100vh;
   width: 95vw;
+  color: var(--light);
 }
 
 .nav-holder {
@@ -129,7 +155,7 @@ body {
   display: inline;
   text-align: center;
   margin-top: 1vh;
-  font-size: large;
+  font-size: 2vw;
 }
 
 
@@ -142,14 +168,27 @@ body {
   }
 
   .nav-list {
-    text-align: end;
+    text-align: center;
     margin-top: 1vh;
-    font-size: large;
+    font-size: 2vw;
   }
   
   .small-nav {
     height: 10vh;
   }
+}
+
+.links {
+  margin-top: 15vh;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(var(--primary), var(--secondary));
+  border-radius: 10%;
+}
+
+.links a {
+  padding: 2vh 0;
 }
 
 textarea {
@@ -254,20 +293,12 @@ textarea {
 }
 
 .project-card {
-  width: 45%;
-  min-height: 50vh;
+  margin: 2vh 2vw;
   border-radius: 10px;
 }
 
 .resume-holder {
   border-radius: 0 15px;
-}
-
-@media only screen and (max-width: 992px) {
-  .project-card {
-    max-width: 85%;
-    min-width: 75%;
-  }
 }
 
 .center-content {
@@ -276,10 +307,7 @@ textarea {
 }
 
 .project-photo {
-  max-height: var(--image-size);
-  height: auto;
-  border-radius: 10px;
-  border: var(--dark) solid 2px;
+  vertical-align: middle;
 }
 
 .stamp {
@@ -292,7 +320,7 @@ textarea {
 }
 
 .project-description {
-  max-width: 75%;
+  margin: 1vh 2vw;
 }
 
 .contact-form-holder {
@@ -304,18 +332,15 @@ textarea {
 }
 
 .footer-box {
-  width: 100%;
+  margin-top: 4vh;
+  width: 90%;
   background-image: linear-gradient(45deg, var(--primary), var(--secondary));
 border-radius: 10px;
 }
 
 a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .navActive {

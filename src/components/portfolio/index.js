@@ -8,6 +8,7 @@ function Portfolio() {
       description: "A simple PWA used to track money over time.",
       imageSrc: "money-tracker",
       gitHubLink: "https://github.com/merrickwatts/Money-Tracker",
+      liveLink: "https://project-money-tracker.herokuapp.com/",
     },
     {
       name: "Social Media API Project",
@@ -22,11 +23,11 @@ function Portfolio() {
         "A simple note taking app to jot down your thoughts and come back to them later.",
       imageSrc: "note-taker",
       gitHubLink: "https://github.com/merrickwatts/Note-Taking-App",
+      liveLink: "https://project-note-taker-11.herokuapp.com/notes",
     },
     {
       name: "Nikes on My Feet",
-      description:
-        "A desplay site where you can view custom nike shoes and buy them if you like them.",
+      description: "A desplay site where you can view custom shoes.",
       imageSrc: "nikes-on-my-feet",
       gitHubLink: "https://github.com/merrickwatts/nikes-on-my-feet",
     },
@@ -36,6 +37,7 @@ function Portfolio() {
         "A group project where you can login, view, and share hikes with others.",
       imageSrc: "bit-trail",
       gitHubLink: "https://github.com/CalebLawver/Bit-Trail",
+      liveLink: "https://bit-trail.herokuapp.com/",
     },
     {
       name: "Employee Tracker",
@@ -46,33 +48,54 @@ function Portfolio() {
   ]);
 
   return (
-    <div>
-      <ul className="flex-row center-content">
+    <div className="container-fluid text-center">
+      <div className="row justify-content-center">
+        <h2 className="portfolio-title">Some of my work:</h2>
+      </div>
+      <div className="row justify-content-center">
         {projects.map((project) => (
-          <div className="containerBackdrop project-card my-2 mx-2 py-2 px-2">
-            <li className="">
-              <h3>{project.name}</h3>
-              <img
-                src={require(`../../assets/images/${project.imageSrc}.png`)}
-                alt="My Project"
-                className="project-photo my-2"
-              ></img>
-              <div className="flex-row space-between">
-                <p className="project-description">{project.description}</p>
-                <a href={project.gitHubLink} target="_blank" rel="noreferrer">
+          <div className="containerBackdrop project-card col-10 col-md-5 justify-content-center d-flex flex-column">
+            <div className="container d-flex flex-grow-1 align-items-center">
+              <div className="row">
+                <div className="col-12">
+                  <h3 className="porject-title">{project.name}</h3>
+                </div>
+                <div className="col-md-6 col-12 d-flex">
                   <img
-                    src={require("../../assets/images/GitHub-Mark-64px.png")}
-                    alt="Link to my GitHub"
-                    className="link-image hvr-bob"
+                    src={require(`../../assets/images/${project.imageSrc}.png`)}
+                    alt="My Project"
+                    className="project-photo img-fluid mx-auto rounded"
                   ></img>
-                </a>
+                </div>
+                <div className="col-md-6 col-12">
+                  <p className="project-description">{project.description}</p>
+                </div>
+                <div className="col-12 project-links">
+                  <a href={project.gitHubLink} target="_blank" rel="noreferrer">
+                    <img
+                      src={require("../../assets/images/GitHub-Mark-64px.png")}
+                      alt="Link to my GitHub"
+                      className="link-image hvr-bob"
+                    ></img>
+                  </a>
+                  {project.liveLink && (
+                    <a
+                      className="d-inline"
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live
+                    </a>
+                  )}
+                </div>
               </div>
-            </li>
+            </div>
           </div>
         ))}
-      </ul>
-      <div className="footer-box py-2">
-        <Footer />
+        <div className="footer-box py-2">
+          <Footer />
+        </div>
       </div>
     </div>
   );
