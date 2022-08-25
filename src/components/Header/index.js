@@ -10,16 +10,11 @@ function Header(props) {
   }, [currentCategory]);
 
   return (
-    <header className="flex-row container space-between py-2">
-      <div>
-        <h1>Merrick</h1>
-      </div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-      ></Nav>
-    </header>
+    <Nav
+      categories={categories}
+      setCurrentCategory={setCurrentCategory}
+      currentCategory={currentCategory}
+    ></Nav>
   );
 }
 

@@ -9,11 +9,11 @@ function Nav(props) {
   }, [currentCategory]);
 
   return (
-    <nav className="px-2">
-      <ul className="flex-row">
+    <nav>
+      <div className="nav-holder">
         {categories.map((category) => (
           <li
-            className={`mx-1 px-1 hvr-bob ${
+            className={`hvr-bob nav-list ${
               currentCategory.name === category.name && "navActive"
             }`}
             key={category.name}
@@ -27,7 +27,7 @@ function Nav(props) {
             </span>
           </li>
         ))}
-      </ul>
+      </div>
     </nav>
   );
 }
